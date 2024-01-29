@@ -6,3 +6,7 @@ export const store = configureStore({
     patients: patientReducer,
   },
 });
+
+export type AppState = ReturnType<typeof store.getState>;
+
+export type AppDispatch = typeof store.dispatch;
