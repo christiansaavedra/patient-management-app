@@ -28,7 +28,7 @@ To run the app locally, follow these steps:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-repository/patient-management-app.git
+   git clone https://github.com/christiansaavedra/patient-management-app.git
    ```
 
 2. **Move to the cloned repository root folder**

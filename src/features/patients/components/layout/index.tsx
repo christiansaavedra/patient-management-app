@@ -9,7 +9,6 @@ import {
   Select,
   SimpleGrid,
   Spinner,
-  Stack,
   Text,
 } from "@chakra-ui/react";
 import { pxToRem } from "common/helpers";
@@ -49,12 +48,16 @@ const PatientsLayout = () => {
   return (
     <>
       <Box
-        sx={{ background: "gray.50", minHeight: "100vh", padding: pxToRem(80) }}
+        sx={{
+          background: "gray.50",
+          minHeight: "100vh",
+          padding: [pxToRem(40), pxToRem(80)],
+        }}
       >
         {status !== "loading" && (
           <InputGroup
             sx={{
-              width: "25%",
+              width: ["100%", "25%"],
               marginBottom: pxToRem(32),
             }}
           >
