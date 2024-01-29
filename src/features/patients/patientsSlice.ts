@@ -19,10 +19,11 @@ const initialState: PatientsState = {
 
 export const fetchPatients = createAsyncThunk(
   "patients/fetchPatients",
-  async () => {
-    const response = await fetch(`${API_ENDPOINT}/users`);
+  async ({ page, limit }: { page: number; limit: number }) => {
+    const response = await fetch(
+      `${API_ENDPOINT}/users?page=${page}&limit=${limit}`
+    );
     const data = await response.json();
-
     return data;
   }
 );
